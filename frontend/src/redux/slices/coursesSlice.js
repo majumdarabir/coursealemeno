@@ -9,7 +9,7 @@ const initialState = {
 };
 
 export const fetchCourses = createAsyncThunk('courses/fetchCourses', async () => {
-    const response = await axios.get('http://localhost:5000/courses');
+    const response = await axios.get('https://coursealemeno.onrender.com');
     return response.data;
 });
 

@@ -20,7 +20,7 @@ const StudentCourses = () => {
     const fetchStudentCourses = async () => {
         setLoading(true);
         try {
-            const response = await axios.get(`http://localhost:5000/student-courses/${email}`);
+            const response = await axios.get(`https://coursealemeno.onrender.com/student-courses/${email}`);
             setCourses(response.data);
             setError('');
         } catch (error) {
